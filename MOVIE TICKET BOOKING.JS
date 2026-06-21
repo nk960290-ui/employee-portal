@@ -1,12 +1,12 @@
-let customer = prompt("Enter Customer Name");
+let customer = "NANDHAKUMAR";
 
-let movie = "Coolie";
+let movie = "DRAGON(TELUGU)";
 let ticketPrice = 150;
-let quantity = 2;
+let quantity = 10;
 
 let total = ticketPrice * quantity;
 
-let confirmBooking = confirm("Do you want to book the ticket?");
+let confirmBooking = true;
 
 let status = confirmBooking
     ? "Booking Successful"
@@ -19,5 +19,3 @@ console.log(`Ticket Price : ${ticketPrice}`);
 console.log(`Quantity : ${quantity}`);
 console.log(`Total Amount : ${total}`);
 console.log(`Status : ${status}`);
-
-alert(status);
