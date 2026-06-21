@@ -1,65 +1,57 @@
-LET username = prompt("Username");
-let password = prompt("Password");
+let employee = {
+    name: "Nandhakumar",
+    id: 101,
+    department: "IT",
+    experience: 2
+};
 
-if (username === "admin" && password === "12345") {
+let skills = ["HTML", "CSS", "JavaScript"];
 
-    alert("Login Successful");
+let salary = 35000;
+let bonus = 5000;
+let totalSalary = salary + bonus;
 
-    let employee = {
-        name: prompt("Employee Name"),
-        salary: Number(prompt("Salary")),
-        experience: Number(prompt("Experience"))
-    };
+let username = "admin";
+let password = "12345";
 
-    let skills = ["HTML", "CSS", "JavaScript"];
+let loginStatus =
+    username === "admin" && password === "12345"
+        ? "Login Successful"
+        : "Invalid Credentials";
 
-    let attendance = confirm("Present Today?");
+let attendance = true;
+let attendanceStatus = attendance ? "Present" : "Absent";
 
-    let bonus = employee.salary >= 30000 ? 5000 : 2000;
+let experienceStatus =
+    employee.experience >= 2
+        ? "Experienced Employee"
+        : "Fresher";
 
-    console.log("Employee Name : " + employee.name);
-    console.log("Salary : " + employee.salary);
-    console.log("Skills : " + skills);
-    console.log("Attendance : " + attendance);
-    console.log("Experience : " + employee.experience);
+let employeeName = prompt("Enter Employee Name");
 
-    console.log(`Bonus : ${bonus}`);
-    console.log(`Total Salary : ${employee.salary + bonus}`);
+alert("Welcome to Mini Employee Portal");
 
-} else {
-    alert("Invalid Login");
-}let username = prompt("Username");
-let password = prompt("Password");
+let proceed = confirm("Do you want to continue?");
 
-if (username === "admin" && password === "12345") {
+console.log("===== MINI EMPLOYEE PORTAL =====");
 
-    alert("Login Successful");
+console.log(`Employee Name : ${employeeName}`);
+console.log(`Employee ID : ${employee.id}`);
+console.log(`Department : ${employee.department}`);
 
-    let employee = {
-        name: prompt("Employee Name"),
-        salary: Number(prompt("Salary"))
-    };
+console.log(`Skills : ${skills}`);
 
-    let skills = ["HTML", "CSS"];
+console.log(`Salary : ${salary}`);
+console.log(`Bonus : ${bonus}`);
+console.log(`Total Salary : ${totalSalary}`);
 
-    let attendance = confirm("Present Today?");
+console.log(`Login Status : ${loginStatus}`);
+console.log(`Attendance Status : ${attendanceStatus}`);
+console.log(`Experience Status : ${experienceStatus}`);
 
-    let experience = Number(prompt("Experience"));
+console.warn("Attendance Checked");
 
-    let bonus = employee.salary >= 30000 ? 5000 : 2000;
+console.error("No Errors Found");
 
-    let totalSalary = employee.salary + bonus;
+console.log(`Continue : ${proceed}`);
 
-    console.log(`Name : ${employee.name}`);
-    console.log(`Salary : ${employee.salary}`);
-    console.log(`Skills : ${skills}`);
-    console.log(`Attendance : ${attendance}`);
-    console.log(`Experience : ${experience}`);
-    console.log(`Bonus : ${bonus}`);
-    console.log(`Total Salary : ${totalSalary}`);
-
-} else {
-
-    alert("Invalid Login");
-
-}
