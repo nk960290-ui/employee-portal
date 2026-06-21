@@ -1,4 +1,4 @@
-//1. Store employee name using var
+Store employee name using var
 var employeeName = "Nandhakumar";
 
 // 2. Store employee age using let
@@ -13,18 +13,18 @@ console.log("Employee Age : " + employeeAge);
 console.log("Company Name : " + companyName);
 
 // 5. Show a popup message
-alert("Welcome to Employee Portal");
+console.log("Welcome to Employee Portal");
 
 // 6. Ask the employee if they completed today's task
-let taskCompletion = confirm("Have you completed today's task?");
+let taskCompletion = true;
 console.log(taskCompletion);
 
 // 7. Ask the employee name using prompt
-let enteredName = prompt("Enter your name");
+let enteredName = "Guest";
 console.log("Entered name: " + enteredName);
 
 // 8. Display the entered employee name on the webpage
-document.writeln("Welcome " + enteredName);
+console.log("Welcome " + enteredName);
 
 // 9. Print a success message using console.warn()
 console.warn("Task submitted successfully");
@@ -33,5 +33,5 @@ console.warn("Task submitted successfully");
 console.error("Task submission failed");
 
 // Bonus Task: Update employee age after promotion
-employeeAge = 25; // Re-initialization of let variable
+employeeAge = 30;
 console.log("Updated Employee Age after promotion: " + employeeAge);
