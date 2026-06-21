@@ -1,13 +1,13 @@
-let employeeName = prompt("Enter Employee Name");
-let employeeAge = prompt("Enter Employee Age");
+et employeeName = "nandhakumar";
+let employeeAge = 27;
 
-alert(`Hello ${employeeName}`);
+console.log(`Hello ${employeeName}`);
 
-let companyChoice = confirm("Do you want to join our company?");
+let companyChoice = true;
 
 if (companyChoice) {
-    alert(`Welcome ${employeeName}! Your age is ${employeeAge}.`);
+    console.log(`Welcome ${employeeName}! Your age is ${employeeAge}.`);
 } else {
-    alert("Application Cancelled");
+    console.log("Application Cancelled");
 }
 
