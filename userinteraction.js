@@ -1,10 +1,13 @@
-let name = prompt("Enter Employee Name");
-let age = prompt("Enter Employee Age");
+let employeeName = prompt("Enter Employee Name");
+let employeeAge = prompt("Enter Employee Age");
 
-let join = confirm("Do you want to join our company?");
+alert(`Hello ${employeeName}`);
 
-if (join) {
-    alert("Welcome " + name);
+let companyChoice = confirm("Do you want to join our company?");
+
+if (companyChoice) {
+    alert(`Welcome ${employeeName}! Your age is ${employeeAge}.`);
 } else {
-    alert("Thank You");
+    alert("Application Cancelled");
 }
+
