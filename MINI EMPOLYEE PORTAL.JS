@@ -27,11 +27,9 @@ let experienceStatus =
         ? "Experienced Employee"
         : "Fresher";
 
-let employeeName = prompt("Enter Employee Name");
+let employeeName = employee.name;
 
-alert("Welcome to Mini Employee Portal");
-
-let proceed = confirm("Do you want to continue?");
+let proceed = true;
 
 console.log("===== MINI EMPLOYEE PORTAL =====");
 
@@ -39,7 +37,7 @@ console.log(`Employee Name : ${employeeName}`);
 console.log(`Employee ID : ${employee.id}`);
 console.log(`Department : ${employee.department}`);
 
-console.log(`Skills : ${skills}`);
+console.log(`Skills : ${skills.join(", ")}`);
 
 console.log(`Salary : ${salary}`);
 console.log(`Bonus : ${bonus}`);
@@ -51,7 +49,7 @@ console.log(`Experience Status : ${experienceStatus}`);
 
 console.warn("Attendance Checked");
 
-console.error("No Errors Found");
+console.log("No Errors Found");
 
 console.log(`Continue : ${proceed}`);
 
