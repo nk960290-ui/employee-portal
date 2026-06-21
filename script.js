@@ -1,4 +1,4 @@
-Store employee name using var
+//1.Store employee name using var
 var employeeName = "Nandhakumar";
 
 // 2. Store employee age using let
